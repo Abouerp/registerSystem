@@ -19,7 +19,7 @@ import java.util.Set;
  * @author Abouerp
  */
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/bpi/user")
 public class AdministratorController {
 
     private final AdministratorService administratorService;
