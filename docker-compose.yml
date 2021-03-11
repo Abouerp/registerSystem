@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  web:
+    image: register-library/abouerp:latest
+    networks:
+      - library
+    ports:
+      - 9997:8080
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./deploy/resources/application.yml:/app/resources/application.yml:ro
+    restart: always
+
+networks:
+  library:
+    external: true
+
+
+
+
+
